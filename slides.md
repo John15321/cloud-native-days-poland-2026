@@ -47,7 +47,6 @@ Software Engineer
 - Flatcar, Ignition and Butane as concrete examples
 - Provisioned, not installed
 - Immutable by design & A/B updates
-- What changes for platform teams
 
 ---
 
@@ -169,9 +168,40 @@ Software Engineer
 
 <!-- _class: section -->
 
-# How Flatcar Works
+# What Problem Do We Solve?
 
-## What is it, and how do you use it?
+## Why the OS is still the odd one out
+
+---
+
+<!-- _class: sidebar -->
+
+# Everything is code. Almost.
+
+<div class="cols-2" style="align-items: start; gap: 40px; margin-top: 12px">
+
+<div>
+
+**Already declarative**
+
+- Dockerfiles
+- Kubernetes manifests, Helm charts
+- GitOps workflows
+- CI/CD pipelines
+
+</div>
+
+<div>
+
+**Still treated differently**
+
+- Host OS installed interactively
+- Changed over time
+- Repaired manually when it breaks
+
+</div>
+
+</div>
 
 ---
 
@@ -207,37 +237,6 @@ Software Engineer
 <div style="text-align: center">
   <img style="display: block; margin: 0 auto; max-width: 60%; max-height: 380px; object-fit: contain" src="assets/logos/external/other/flip-switch.png" alt="Flatcar">
   <p style="font-weight: 700; margin: 12px 0 0 0">Flatcar</p>
-</div>
-
-</div>
-
----
-
-<!-- _class: sidebar -->
-
-# Everything is code. Almost.
-
-<div class="cols-2" style="align-items: start; gap: 40px; margin-top: 12px">
-
-<div>
-
-**Already declarative**
-
-- Dockerfiles
-- Kubernetes manifests, Helm charts
-- GitOps workflows
-- CI/CD pipelines
-
-</div>
-
-<div>
-
-**Still treated differently**
-
-- Host OS installed interactively
-- Changed over time
-- Repaired manually when it breaks
-
 </div>
 
 </div>
@@ -287,6 +286,12 @@ Software Engineer
 # Flatcar Workflow
 
 <img style="display: block; margin: auto; max-width: 100%; max-height: 60%; object-fit: contain" src="assets/diagrams/flatcar-workflow.svg" alt="Flatcar workflow: Butane YAML provisions Cloud, VM, or Bare Metal running Containers">
+
+---
+
+# The Container Philosophy, for the OS
+
+<img style="display: block; margin: auto; height: 540px; max-width: 100%; object-fit: contain" src="assets/diagrams/os-vs-container.svg" alt="Containers: Dockerfile, image, container, new tag. Operating system: Butane, Flatcar image, node, new OS release">
 
 ---
 
@@ -441,22 +446,10 @@ Every commit runs the full test suite: unit, integration, and product tests acro
 
 ---
 
-<!-- _class: sidebar -->
-
-# The shift for platform teams
-
-- **Declare up front:** users, files, systemd units, networking, first-boot setup in Butane/Ignition
-- **Move into containers or automation:** everything that changes after boot
-- **Debugging:** reprovision and compare, instead of patching a unique machine
-- **Upgrades:** whole-OS A/B updates with rollback, no package churn
-- **Maintenance:** one versioned config in Git, identical hosts for years
-
----
-
 <!-- _class: closing -->
 <!-- _paginate: false -->
 
-# Socials
+# Thank you!
 
 <p class="closing-qr-caption"><img src="assets/logos/external/discord-white.svg" alt=""> Join our Discord!</p>
 
@@ -472,10 +465,3 @@ Every commit runs the full test suite: unit, integration, and product tests acro
 </p>
 
 <p class="closing-cta"><strong>Everyone welcome.</strong> Users, contributors, or just curious. Ask questions, get help, share what you're building!</p>
-
----
-
-<!-- _class: closing -->
-<!-- _paginate: false -->
-
-# Thank you!
