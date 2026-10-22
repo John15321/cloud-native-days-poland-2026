@@ -43,10 +43,11 @@ Software Engineer
 # Agenda
 
 - The community behind Flatcar
-- The missing layer: the OS under your platform
-- Flatcar, Ignition and Butane as concrete examples
+- What problem do we solve?
+- Operating Systems as Code
 - Provisioned, not installed
 - Immutable by design & A/B updates
+- Release channels
 
 ---
 
@@ -275,7 +276,7 @@ Software Engineer
 - One declarative config, applied at boot
 - Every machine identical, reproducible
 - Whole-OS atomic updates, no drift
-- Same idea as containers (and the config lives in Git)
+- Same idea as containers, with the config in Git
 
 </div>
 
