@@ -24,6 +24,7 @@ author: Jan Bronicki
 
 <div class="pin-tr" style="display: flex; gap: 20px; align-items: center">
   <img class="img-h-xs" src="./assets/logos/external/flatcar-logo-other.png" alt="Flatcar">
+  <img class="img-h-xs" src="./assets/logos/external/microsoft-logo.svg" alt="Microsoft">
 </div>
 
 
@@ -31,8 +32,10 @@ author: Jan Bronicki
 
 Flatcar Maintainer
 
-Software Engineer
+Software Engineer at Microsoft
 <img class="bio-photo" style="--bio-photo-size: 320px; top: 180px" src="assets/photo/individual_photos/jan-bronicki.jpeg" alt="Jan Bronicki">
+
+<p class="bio-github" style="bottom: 100px"><img src="assets/logos/external/linkedin-white.svg" alt="LinkedIn">jan-bronicki</p>
 
 <p class="bio-github"><img src="assets/logos/external/github-white.png" alt="GitHub">@John15321</p>
 
